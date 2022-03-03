@@ -1,60 +1,41 @@
-
 <template>
-  <div id="app">
-    <navigation-vue></navigation-vue>
-
-
-    <home-vue v-if="current === 'HomeVue'"></home-vue>
-    <categorias-vue v-if="current === 'CategoriasVue'"></categorias-vue>
-    <perfil-vue v-if="current === 'PerfilVue'"></perfil-vue>
-
-
-
-    <!--<div>
-        <keep-alive>
-          <component v-bind:is="current"></component>
-        </keep-alive>
-    </div>-->
+  <!--<div id="app">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view/>
+  </div>-->
+  <div id="nav">
+    <div id="nav">
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+    <router-link to="/profile">Profile</router-link>
   </div>
-  
+    <router-view/>
+
+  </div>
 </template>
 
-<script>
-import NavigationVue from './components/navbar/navbar.vue'
-import HomeVue from './components/home/home.vue'
-import CategoriasVue from './components/categorias/categorias.vue'
-import PerfilVue from './components/perfil/perfil.vue'
-
-
-
-export default {
-  name: 'App',
-  components: {
-    NavigationVue,
-    HomeVue,
-    CategoriasVue,
-    PerfilVue
-  },
-  data: function(){
-    return {current: 'HomeVue'}
-  }
-}
-</script>
-
 <style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
 
-  body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+#nav {
+  padding: 30px;
+}
 
-  #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    
-  }
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
 </style>
