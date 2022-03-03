@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="categorias">
     <h2>{{ titulo }}</h2>
   </div>
 </template>
@@ -7,15 +7,15 @@
 <script>
 
 export default {
-  name: 'HomeView',
+  name: 'CategoriasView',
   data: function(){
-    return {titulo: "Home"}
+    return {titulo: "Categorías"}
   }
 }
 </script>
 
 <style scoped>
-  .home{
+  .categorias{
     width: 100%;
   }
   h2{

@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="perfil">
     <h2>{{ titulo }}</h2>
   </div>
 </template>
@@ -7,15 +7,15 @@
 <script>
 
 export default {
-  name: 'HomeView',
+  name: 'PerfilView',
   data: function(){
-    return {titulo: "Home"}
+    return {titulo: "Perfil"}
   }
 }
 </script>
 
 <style scoped>
-  .home{
+  .perfil{
     width: 100%;
   }
   h2{
