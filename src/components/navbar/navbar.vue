@@ -5,9 +5,8 @@
         </div>
         <div class="navbar__links navbar__links--w30">
             <router-link class="navbar__link" to="/">Home</router-link> 
-            <router-link class="navbar__link" to="/categorias">About</router-link>
-            <router-link class="navbar__link" to="/perfil">Profile</router-link>
-            
+            <router-link class="navbar__link" to="/categorias">Categorías</router-link>
+            <router-link class="navbar__link" to="/perfil">Perfil</router-link>
         </div>
         <div class="navbar__links">
             <input type="search" class="navbar__navigation">
